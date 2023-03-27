@@ -22,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Container(
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('login-background.png'), fit: BoxFit.cover)),
+              image: AssetImage('assets/login-background.png'), fit: BoxFit.cover)),
       child: Center(
         child: Container(
           decoration: BoxDecoration(
@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 const CircleAvatar(
-                  backgroundImage: AssetImage('birthday-icon.png'),
+                  backgroundImage: AssetImage('assets/birthday-icon.png'),
                   radius: 50,
                 ),
                 TextFormField(

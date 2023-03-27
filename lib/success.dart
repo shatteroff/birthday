@@ -7,11 +7,11 @@ import 'description.dart';
 class SuccessScreen extends StatelessWidget {
   final int index;
   static final List<String> imgs = [
-    "success1.png",
-    "success2.png",
-    "success3.png",
-    "success4.png",
-    "success5.png"
+    "assets/success1.gif",
+    "assets/success2.gif",
+    "assets/success3.gif",
+    "assets/success4.gif",
+    "assets/success5.gif"
   ];
 
   const SuccessScreen({Key? key, required this.index}) : super(key: key);
@@ -37,7 +37,7 @@ class SuccessScreen extends StatelessWidget {
         alignment: Alignment.center,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('confety.png'), fit: BoxFit.cover)),
+                image: AssetImage('assets/confety.png'), fit: BoxFit.cover)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

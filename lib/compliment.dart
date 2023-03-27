@@ -5,14 +5,18 @@ import 'description.dart';
 class ComplimentScreen extends StatelessWidget {
   static final List compliments = [
     [
-      'login-background.png',
-      'complement1.png',
+      'assets/login-background.png',
+      'assets/complement1.JPEG',
       "Самая восхитительная девушка на свете?"
     ],
-    ['login-background.png', 'complement2.png', "Самая любящая и заботливая!"],
     [
-      'login-background.png',
-      'complement3.png',
+      'assets/login-background.png',
+      'assets/complement2.JPEG',
+      "Самая любящая и заботливая!"
+    ],
+    [
+      'assets/login-background.png',
+      'assets/complement3.png',
       "Прекрасней тебя нет в свете белом!"
     ]
   ];

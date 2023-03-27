@@ -56,7 +56,7 @@ class _RiddleScreenState extends State<RiddleScreen> {
         body: Container(
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('login-background.png'), fit: BoxFit.cover)),
+              image: AssetImage('assets/login-background.png'), fit: BoxFit.cover)),
       child: Center(
         child: Container(
           width: width * 0.8,
@@ -72,7 +72,7 @@ class _RiddleScreenState extends State<RiddleScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 if (widget.index == 4)
-                  Image.asset('img_1.png')
+                  Image.asset('assets/img_1.png')
                 else
                   Text(riddles[widget.index][0]),
                 TextFormField(
@@ -81,7 +81,7 @@ class _RiddleScreenState extends State<RiddleScreen> {
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Введите отгадку';
-                    } else if (value.toLowerCase() !=
+                    } else if (value.toLowerCase().trim() !=
                         riddles[widget.index][1].toLowerCase()) {
                       return 'Неверный ответ';
                     }
